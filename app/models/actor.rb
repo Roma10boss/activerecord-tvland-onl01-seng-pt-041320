@@ -8,7 +8,6 @@ class Actor < ActiveRecord::Base
       t.string :last_name
     end
 
- 6
   def list_roles
     roles = []
     array_of_characters = self.characters.map {|character| character.name}
